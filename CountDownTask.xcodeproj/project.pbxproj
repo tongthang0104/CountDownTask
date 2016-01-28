@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		DEE03B161C5AACF7005E248F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE03B151C5AACF7005E248F /* AppDelegate.swift */; };
-		DEE03B181C5AACF7005E248F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE03B171C5AACF7005E248F /* ViewController.swift */; };
 		DEE03B1B1C5AACF7005E248F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE03B191C5AACF7005E248F /* Main.storyboard */; };
 		DEE03B1D1C5AACF7005E248F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE03B1C1C5AACF7005E248F /* Assets.xcassets */; };
 		DEE03B201C5AACF7005E248F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE03B1E1C5AACF7005E248F /* LaunchScreen.storyboard */; };
 		DEE03B2B1C5AACF7005E248F /* CountDownTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE03B2A1C5AACF7005E248F /* CountDownTaskTests.swift */; };
 		DEE03B361C5AACF7005E248F /* CountDownTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE03B351C5AACF7005E248F /* CountDownTaskUITests.swift */; };
+		DEE03B441C5AD261005E248F /* AddTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE03B431C5AD261005E248F /* AddTaskTableViewController.swift */; };
+		DEE03B461C5AD276005E248F /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE03B451C5AD276005E248F /* TaskListViewController.swift */; };
+		DEE03B481C5AD283005E248F /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE03B471C5AD283005E248F /* TaskDetailViewController.swift */; };
+		DEE03B4C1C5AD29E005E248F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE03B4B1C5AD29E005E248F /* Task.swift */; };
+		DEE03B4E1C5AD2A9005E248F /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE03B4D1C5AD2A9005E248F /* Timer.swift */; };
+		DEE03B501C5AD2B9005E248F /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE03B4F1C5AD2B9005E248F /* TaskController.swift */; };
+		DEE03B521C5AD2C6005E248F /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE03B511C5AD2C6005E248F /* TimerController.swift */; };
+		DEE03B591C5AD38F005E248F /* TaskListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE03B581C5AD38F005E248F /* TaskListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,6 @@
 /* Begin PBXFileReference section */
 		DEE03B121C5AACF7005E248F /* CountDownTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountDownTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE03B151C5AACF7005E248F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DEE03B171C5AACF7005E248F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DEE03B1A1C5AACF7005E248F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEE03B1C1C5AACF7005E248F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEE03B1F1C5AACF7005E248F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,14 @@
 		DEE03B311C5AACF7005E248F /* CountDownTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountDownTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE03B351C5AACF7005E248F /* CountDownTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTaskUITests.swift; sourceTree = "<group>"; };
 		DEE03B371C5AACF7005E248F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE03B431C5AD261005E248F /* AddTaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskTableViewController.swift; sourceTree = "<group>"; };
+		DEE03B451C5AD276005E248F /* TaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		DEE03B471C5AD283005E248F /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		DEE03B4B1C5AD29E005E248F /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		DEE03B4D1C5AD2A9005E248F /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		DEE03B4F1C5AD2B9005E248F /* TaskController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
+		DEE03B511C5AD2C6005E248F /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		DEE03B581C5AD38F005E248F /* TaskListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +112,13 @@
 			isa = PBXGroup;
 			children = (
 				DEE03B151C5AACF7005E248F /* AppDelegate.swift */,
-				DEE03B171C5AACF7005E248F /* ViewController.swift */,
-				DEE03B191C5AACF7005E248F /* Main.storyboard */,
-				DEE03B1C1C5AACF7005E248F /* Assets.xcassets */,
-				DEE03B1E1C5AACF7005E248F /* LaunchScreen.storyboard */,
 				DEE03B211C5AACF7005E248F /* Info.plist */,
+				DEE03B1C1C5AACF7005E248F /* Assets.xcassets */,
+				DEE03B571C5AD323005E248F /* Core data */,
+				DEE03B561C5AD30E005E248F /* Storyboard */,
+				DEE03B551C5AD2E4005E248F /* Views */,
+				DEE03B541C5AD2DA005E248F /* Controller */,
+				DEE03B531C5AD2CD005E248F /* Modal */,
 			);
 			path = CountDownTask;
 			sourceTree = "<group>";
@@ -123,6 +139,51 @@
 				DEE03B371C5AACF7005E248F /* Info.plist */,
 			);
 			path = CountDownTaskUITests;
+			sourceTree = "<group>";
+		};
+		DEE03B531C5AD2CD005E248F /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				DEE03B4B1C5AD29E005E248F /* Task.swift */,
+				DEE03B4D1C5AD2A9005E248F /* Timer.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		DEE03B541C5AD2DA005E248F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEE03B511C5AD2C6005E248F /* TimerController.swift */,
+				DEE03B4F1C5AD2B9005E248F /* TaskController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DEE03B551C5AD2E4005E248F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEE03B431C5AD261005E248F /* AddTaskTableViewController.swift */,
+				DEE03B451C5AD276005E248F /* TaskListViewController.swift */,
+				DEE03B471C5AD283005E248F /* TaskDetailViewController.swift */,
+				DEE03B581C5AD38F005E248F /* TaskListTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DEE03B561C5AD30E005E248F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DEE03B191C5AACF7005E248F /* Main.storyboard */,
+				DEE03B1E1C5AACF7005E248F /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		DEE03B571C5AD323005E248F /* Core data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Core data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +317,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEE03B181C5AACF7005E248F /* ViewController.swift in Sources */,
+				DEE03B441C5AD261005E248F /* AddTaskTableViewController.swift in Sources */,
+				DEE03B461C5AD276005E248F /* TaskListViewController.swift in Sources */,
+				DEE03B591C5AD38F005E248F /* TaskListTableViewCell.swift in Sources */,
+				DEE03B501C5AD2B9005E248F /* TaskController.swift in Sources */,
 				DEE03B161C5AACF7005E248F /* AppDelegate.swift in Sources */,
+				DEE03B4C1C5AD29E005E248F /* Task.swift in Sources */,
+				DEE03B521C5AD2C6005E248F /* TimerController.swift in Sources */,
+				DEE03B481C5AD283005E248F /* TaskDetailViewController.swift in Sources */,
+				DEE03B4E1C5AD2A9005E248F /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +550,7 @@
 				DEE03B3C1C5AACF7005E248F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEE03B3D1C5AACF7005E248F /* Build configuration list for PBXNativeTarget "CountDownTaskTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +559,7 @@
 				DEE03B3F1C5AACF7005E248F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEE03B401C5AACF7005E248F /* Build configuration list for PBXNativeTarget "CountDownTaskUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +568,7 @@
 				DEE03B421C5AACF7005E248F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
