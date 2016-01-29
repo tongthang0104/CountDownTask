@@ -12,7 +12,7 @@ class TaskController {
     
     static let shareController = TaskController()
     
-    let taskArray: [Task] = []
+    var taskArray: [Task] = []
     
     var completedTasks: [Task] {
         return taskArray.filter({$0.isComplete.boolValue})
@@ -24,16 +24,12 @@ class TaskController {
     
     
     func addTask(task: Task) {
-        
+        taskArray.append(task)
     }
     
     func removeTask(task: Task) {
-        
+        if let index = self.taskArray.indexOf(task) {
+            taskArray.removeAtIndex(index)
+        }
     }
-    
-    func editTask() {
-        
-    }
-    
-    
 }

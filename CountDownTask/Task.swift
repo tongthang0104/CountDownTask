@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Task {
+class Task: Equatable {
     var name: String
     var bodyText: String
     var timeToComplete: Timer
@@ -21,4 +21,8 @@ class Task {
         self.isComplete = isComplete
     }
    
+}
+
+func ==(lhs: Task, rhs: Task) -> Bool {
+    return (lhs.name == rhs.name) && (lhs.bodyText == rhs.bodyText)
 }

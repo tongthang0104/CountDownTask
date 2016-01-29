@@ -45,7 +45,7 @@ extension TaskListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("taskCell", forIndexPath: indexPath)
-        cell.textLabel?.text = "thang"
+
         return cell
     }
 }
