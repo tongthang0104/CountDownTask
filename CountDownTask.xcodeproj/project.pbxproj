@@ -92,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				DEE03B141C5AACF7005E248F /* CountDownTask */,
+				DEE03B571C5AD323005E248F /* Core data */,
 				DEE03B291C5AACF7005E248F /* CountDownTaskTests */,
 				DEE03B341C5AACF7005E248F /* CountDownTaskUITests */,
 				DEE03B131C5AACF7005E248F /* Products */,
@@ -114,11 +115,10 @@
 				DEE03B151C5AACF7005E248F /* AppDelegate.swift */,
 				DEE03B211C5AACF7005E248F /* Info.plist */,
 				DEE03B1C1C5AACF7005E248F /* Assets.xcassets */,
-				DEE03B571C5AD323005E248F /* Core data */,
-				DEE03B561C5AD30E005E248F /* Storyboard */,
-				DEE03B551C5AD2E4005E248F /* Views */,
-				DEE03B541C5AD2DA005E248F /* Controller */,
 				DEE03B531C5AD2CD005E248F /* Modal */,
+				DEE03B541C5AD2DA005E248F /* Controller */,
+				DEE03B551C5AD2E4005E248F /* Views */,
+				DEE03B561C5AD30E005E248F /* Storyboard */,
 			);
 			path = CountDownTask;
 			sourceTree = "<group>";
@@ -184,6 +184,7 @@
 			children = (
 			);
 			name = "Core data";
+			path = CountDownTask;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

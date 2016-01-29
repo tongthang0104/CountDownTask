@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class Timer {
+    
+//    var seconds: NSTimeInterval
+//    var totalSeconds: NSTimeInterval
+//    var timer: NSTimer?
+}

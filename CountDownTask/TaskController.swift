@@ -7,3 +7,33 @@
 //
 
 import Foundation
+
+class TaskController {
+    
+    static let shareController = TaskController()
+    
+    let taskArray: [Task] = []
+    
+    var completedTasks: [Task] {
+        return taskArray.filter({$0.isComplete.boolValue})
+    }
+   
+    var inCompletedTasks: [Task] {
+        return taskArray.filter({$0.isComplete.boolValue})
+    }
+    
+    
+    func addTask(task: Task) {
+        
+    }
+    
+    func removeTask(task: Task) {
+        
+    }
+    
+    func editTask() {
+        
+    }
+    
+    
+}
