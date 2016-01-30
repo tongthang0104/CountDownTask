@@ -20,6 +20,13 @@ class TaskListTableViewCell: UITableViewCell {
     @IBAction func taskCompletButtonTapped(sender: AnyObject) {
     }
 
+    
+    func updateWithTask(task: Task) {
+        self.taskNameLabel.text = task.name
+        self.timeStampLabel.text = task.bodyText
+    }
+    
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

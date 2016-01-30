@@ -11,10 +11,10 @@ import Foundation
 class Task: Equatable {
     var name: String
     var bodyText: String
-    var timeToComplete: Timer
+    var timeToComplete: Timer?
     var isComplete: Bool
     
-    init(name: String, bodyText: String, timeToComplete: Timer, isComplete: Bool) {
+    init(name: String, bodyText: String, timeToComplete: Timer? = nil, isComplete: Bool) {
         self.name = name
         self.timeToComplete = timeToComplete
         self.bodyText = bodyText

@@ -164,8 +164,8 @@
 			children = (
 				DEE03B431C5AD261005E248F /* AddTaskTableViewController.swift */,
 				DEE03B451C5AD276005E248F /* TaskListViewController.swift */,
-				DEE03B471C5AD283005E248F /* TaskDetailViewController.swift */,
 				DEE03B581C5AD38F005E248F /* TaskListTableViewCell.swift */,
+				DEE03B471C5AD283005E248F /* TaskDetailViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";

@@ -9,43 +9,52 @@
 import UIKit
 
 class TaskListViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
+    
+    var task: [Task] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
     
-    /*
+    
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "taskDetail" {
+            let destinationController = segue.destinationViewController as! TaskDetailViewController
+            _ = destinationController.view
+            
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let task = TaskController.shareController.taskArray[indexPath.row]
+                destinationController.updateWithTask(task)
+            }
+        }
     }
-    */
-
 }
 
 extension TaskListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return TaskController.shareController.taskArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("taskCell", forIndexPath: indexPath)
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("taskCell", forIndexPath: indexPath) as! TaskListTableViewCell
+        let task = TaskController.shareController.taskArray[indexPath.row]
+        cell.updateWithTask(task)
         return cell
     }
 }

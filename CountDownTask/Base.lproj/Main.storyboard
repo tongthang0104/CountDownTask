@@ -74,7 +74,7 @@
                                             <outlet property="taskCompleteButton" destination="A4k-5x-lVu" id="2Mt-li-olD"/>
                                             <outlet property="taskNameLabel" destination="IaC-7W-gGX" id="yh5-O5-NXk"/>
                                             <outlet property="timeStampLabel" destination="aEF-X4-m7R" id="a8e-Ux-Ude"/>
-                                            <segue destination="i9Q-rE-O4f" kind="show" id="Yxe-Ze-gvd"/>
+                                            <segue destination="i9Q-rE-O4f" kind="show" identifier="taskDetail" id="Yxe-Ze-gvd"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -161,7 +161,7 @@
                                         <rect key="frame" x="0.0" y="164" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gne-dg-Mcb" id="vLG-oX-nxL">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8nE-FE-67c">
@@ -284,17 +284,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finished in ........" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COf-ds-htn">
-                                <rect key="frame" x="167" y="375" width="267" height="21"/>
-                                <color key="backgroundColor" red="0.89009666440000001" green="0.89009666440000001" blue="0.89009666440000001" alpha="0.65912690029999998" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="53I-mB-k6J"/>
-                                    <constraint firstAttribute="width" constant="267" id="Bpd-Vl-92W"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="XAb-1x-AyW">
                                 <rect key="frame" x="202" y="290" width="196" height="77"/>
                                 <subviews>
@@ -314,6 +303,9 @@
                                                 <exclude reference="yqH-5h-rik"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="pauseButtonTapped:" destination="i9Q-rE-O4f" eventType="touchUpInside" id="u0D-F2-oVO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJW-i0-0Es">
                                         <rect key="frame" x="119" y="0.0" width="77" height="77"/>
@@ -322,6 +314,9 @@
                                             <constraint firstAttribute="width" secondItem="TJW-i0-0Es" secondAttribute="height" multiplier="1:1" id="3xN-jm-AGn"/>
                                         </constraints>
                                         <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startButtonTapped:" destination="i9Q-rE-O4f" eventType="touchUpInside" id="2TW-XV-WX0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -337,6 +332,17 @@
                                     </mask>
                                 </variation>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finished in ........" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COf-ds-htn">
+                                <rect key="frame" x="167" y="375" width="267" height="21"/>
+                                <color key="backgroundColor" red="0.89009666440000001" green="0.89009666440000001" blue="0.89009666440000001" alpha="0.65912690029999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="53I-mB-k6J"/>
+                                    <constraint firstAttribute="width" constant="267" id="Bpd-Vl-92W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -358,6 +364,12 @@
                             <constraint firstItem="XAb-1x-AyW" firstAttribute="top" secondItem="21d-G9-XO8" secondAttribute="bottom" constant="4" id="vib-5P-gzL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bodyTextView" destination="21d-G9-XO8" id="ZDc-DZ-yNn"/>
+                        <outlet property="finishTaskLabel" destination="COf-ds-htn" id="zKn-B6-aDF"/>
+                        <outlet property="startButton" destination="TJW-i0-0Es" id="Tou-Ry-AIS"/>
+                        <outlet property="taskNameLabel" destination="Onf-dp-Lo2" id="X01-HQ-1Sb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ng-0n-Gxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
